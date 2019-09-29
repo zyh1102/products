@@ -1,0 +1,225 @@
+html,body, div,span,input,h1,h2,h3,h4,h5,h6,p,a,em,font,img,strong,figure,section,article,pre,footer,button,var,b,u,i,ol,ul,li,form,label,table,tr,th,td{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    font-size: 12px;
+    outline: none;
+}
+body{
+    background: url("img/body-bg.png") repeat-x;
+}
+.container{
+    width: 950px;
+    height: 1000px;
+    margin: 0 auto;
+}
+.head,.main,.foot{
+    width: 953px;
+}
+.head{}
+.head .head-bar{
+    height:32px;
+    line-height: 32px;
+    position: relative;
+}
+.head .head-bar a span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.head .head-bar a span:hover{
+    text-decoration: underline;
+    color: #e63c07;
+}
+.head .head-bar ul{
+    position: absolute;
+    right: 140px;
+    top: 5px;
+}
+.head .head-bar ul li{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 8px;
+}
+.head .head-bar ul li a:hover{
+    color: #e63c07;
+}
+.head .head-bar ul li+li{
+    border-left: 1px solid #cccccc;
+}
+.head .head-bar input{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: 1px solid #cccccc;
+    width: 100px;
+    height: 16px;
+    font-size: 12px;
+    text-indent: 0.5em;
+}
+.head .head-bar button{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    border: 1px solid #1d5489;
+    font-size: 12px;
+    cursor: pointer;
+}
+.head .banner{
+    height: 63px;
+    background: url("img/banner-bg.png") no-repeat;
+    position: relative;
+}
+.head .banner .slogan{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.head .banner .slogan p{
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: "微软雅黑";
+}
+.head .banner .slogan #slogan1{
+    font-size: 20px;
+    color: #666666;
+}
+.head .banner .slogan #slogan2{
+    font-size: 11px;
+    float: right;
+    color: #999999;
+}
+.head .menu{
+    height: 29px;
+    width: 950px;
+    line-height: 29px;
+    background: linear-gradient(#ffaf52,#ff5400);
+    border-radius: 5px;
+    padding-top: 7px;
+    box-shadow: 2px 2px 2px #f8bc88;
+    position: relative;
+}
+.head .menu ul{
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+ }
+.head .menu ul li{
+    height: 29px;
+    line-height: 29px;
+    float: left;
+    margin: 0 25px;
+}
+.head .menu ul li a{
+    height: 29px;
+    line-height: 29px;
+    display: inline-block;
+    padding-left: 5px;
+}
+.head .menu ul li a:hover{
+    background: url(img/menu-left.png) no-repeat left;
+}
+.head .menu ul li a:hover span{
+    background: url(img/menu-right.png) no-repeat right;
+    font-weight: 700;
+    color: #dd2a00;
+}
+.head .menu ul li a span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    height: 29px;
+    padding-right: 5px;
+}
+.head .menu ul li a span:hover{
+    font-weight: 700;
+    background: url(img/menu-right.png) no-repeat right;
+    color: #dd2a00;
+}
+.head .menu ul li .sub-nav{
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    height: 21px;
+    line-height: 21px;
+    white-space: nowrap;
+}
+.head .menu ul li .current-nav{
+    display: block;
+}
+.head .menu ul li .sub-nav div a {
+    display: inline-block;
+    margin: 0 10px;
+    padding-left: 5px;
+}
+.head .menu ul li .sub-nav div a span{
+    color: #525252;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.head .menu ul li .sub-nav div a:hover {
+    font-weight: 400;
+    background: url(img/menu2-left.png) no-repeat left;
+}
+.head .menu ul li .sub-nav div a:hover span{
+    background: url(img/menu2-right.png) no-repeat right;
+}
+.head .menu ul li .sub-nav div a span:hover{
+    background: url(img/menu2-right.png) no-repeat right;
+}
+.head .menu-bg{
+    height: 32px;
+    margin-top: 5px;
+    background: linear-gradient(#fcfcfb,#ededed);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #eeeeee;
+}
+
+.main .title{
+    margin-top: 15px;
+    height: 30px;
+}
+.main .title ul{
+    height: 30px;
+}
+.main .title ul li{
+    width: 92px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 5px;
+    background: url("img/title-bg.png") no-repeat 6px 0;
+    float: left;
+}
+.main .title ul li:hover{
+    width: 92px;
+    height: 36px;
+    background: url("img/title-select-bg.png") no-repeat;
+}
+.main .title ul li a{
+    font-size: 12px;
+    color: #4f0404;
+}
+.main .title ul li a:hover{
+    color: #9a1111;
+}
+.main .title-bottom{
+    height: 5px;
+    background: #f8a833;
+    box-shadow: 2px 2px 2px #c2c0c0;
+}
+.main .content{
+    margin-top: 10px;
+}

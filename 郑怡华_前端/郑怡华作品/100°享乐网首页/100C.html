@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>100C</title>
+    <link rel="stylesheet" href="100C.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon"/>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/100C.js"></script>
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="head"> 
+            <div class="headBar">
+                <span>切换城市:</span>
+                <ul id="place">
+                    <li class="current-place">北京</li>
+                    <li>上海</li>
+                    <li>福州</li>
+                    <li>广州</li>
+                    <li>青岛</li>
+                </ul>
+                <div id="join">
+                    <a href="javascript:;">加盟100度</a>
+                    <span>|</span>
+                    <a href="javascript:;">店铺管理</a>
+                </div>
+            </div>
+            <div class="logoList">
+                <div class="logo-left">
+                    <ul>
+                        <li>美食</li>
+                        <li>夜店</li>
+                        <li>购物</li>
+                        <li>文化</li>
+                        <li>休闲</li>
+                    </ul>
+                </div>
+                <div class="logo-mid">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="logo-right">
+                    <ul>
+                        <li>烧客空间</li>
+                        <li>知道分子</li>
+                        <li>白吃白拿</li>
+                        <li>烧客论坛</li>
+                        <li>企业俱乐部</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <div class="searchTabs">
+                    <a class = 'current-tab' href="javascript:;" input-text="例如：荷棠鱼坊烤鱼 或 樱花日本料理荷棠鱼坊烤鱼 或 樱花日本料理">搜店</a>
+                    <a href="javascript:;" input-text="例如：曾经的那些地址如今是什么样子">地址</a>
+                    <a href="javascript:;" input-text="例如：快来领取今日份大额优惠券！！">优惠券</a>
+                    <a href="javascript:;" input-text="例如：精彩散文、心情随笔、每日笔记">全文</a>
+                    <a href="javascript:;" input-text="例如：近期热门视频人气排行榜，某音热门视频">视频</a>
+                </div>
+                <div class="search-area">
+                    <div class="paper">
+                        <img src="img/paper.png" alt="">
+                    </div>
+                    <input type="text" placeholder="例如：荷棠鱼坊烤鱼 或 樱花日本料理" autocomplete="on">
+                    <input id="search-btn" type="submit" value="搜索">
+                    <div class="word">
+                        <p><a href="javascript:;">金钱豹</a>、<a href="javascript:;">大江南</a>、<a href="javascript:;">湘水之珠</a>、<a href="javascript:;">德瑀楼</a></p>
+                        <p><a href="javascript:;">荷棠鱼坊烤鱼</a>、<a href="javascript:;">SOHO尚都</a>、<a href="javascript:;">湘味楼...</a></p>
+                    </div>
+                </div>
+                <div class="update">
+                    <img id="update" src="img/update.png" alt="">
+                    <div id="articles">
+                        <ul>
+                            <li>[萱萱] 5分钟前 写了一篇新文章：那些灿烂华美的瞬间…</li>
+                            <li>[明明] 7分钟前 写了一篇新文章：今天的蓝天真好看…</li>
+                            <li>[汪汪] 1分钟前 写了一篇新文章：初秋应该吃些什么…</li>
+                            <li>[花花] 2分钟前 写了一篇新文章：弓箭传说太好玩了…</li>
+                            <li>[浩浩] 3分钟前 写了一篇新文章：搬砖从入门到放弃…</li>
+                        </ul>
+                    </div>
+
+                    <a  href="javascript:;"><img id="up" src="img/up.png" alt=""></a>
+                    <a  href="javascript:;"><img id="down" src="img/down.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-left">
+                <div class="main-left-up">
+                    <div class="video">
+                        <span id="what-hot">WHAT' HOT</span>
+                        <img src="img/play.png" alt="">
+                        <video src="javascript:;" width="319" height="285" controls="controls" poster="img/01.jpg"></video>
+                        <div class="hot-news">
+                            <img src="img/hot.png" alt="">
+                            <ul>
+                                <li><span class="list-point"></span>现场实录：杭州机场国航系统的崩溃</li>
+                                <li><span class="list-point"></span>网友自拍国航航班晚点后的遭遇</li>
+                                <li><span class="list-point"></span>【拍客】绝对是最奢侈的航班 注意第14秒</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hot-shop">
+                        <div class="shop-tab">
+                            <a class="hot-shop-tab current-tab" href="javascript:;" shop-main="shop-main01">
+                                <span>HOT SHOP</span> 网红店铺
+                                <img src="img/down.png" alt="">
+                            </a>
+                            <a class="ew-shop-tab " href="javascript:;" shop-main="shop-main02">
+                                <span>EW SHOP</span> 新开店铺
+                                <img src="img/down2.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="shop-main current-shop-main" id="shop-main01">
+                                <div class="shop-main-list">
+                                    <div class="hot-hotel">
+                                        <img src="img/food.png" alt="">
+                                        <p>
+                                            <a href="javascript:;"><span class="food-title">御舟和涵珍园国际酒店</span></a>
+                                            <span>区域：朝阳/CBD</span>
+                                            <span>人均：180元</span>
+                                            <span>人气：12321</span>
+                                        </p>
+                                    </div>
+                                    <div class="hot-hotel">
+                                        <img src="img/food.png" alt="">
+                                        <p>
+                                            <a href="javascript:;"><span class="food-title">御舟和涵珍园国际酒店</span></a>
+                                            <span>区域：朝阳/CBD</span>
+                                            <span>人均：180元</span>
+                                            <span>人气：12321</span>
+                                        </p>
+                                    </div>
+                                    <div class="hot-hotel">
+                                        <img src="img/food.png" alt="">
+                                        <p>
+                                            <a href="javascript:;"><span class="food-title">御舟和涵珍园国际酒店</span></a>
+                                            <span>区域：朝阳/CBD</span>
+                                            <span>人均：180元</span>
+                                            <span>人气：12321</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-main " id="shop-main02">
+                                <div class="shop-main-list">
+                                    <div class="hot-hotel">
+                                        <img src="img/pic01.png" alt="">
+                                        <p>
+                                            <a href="javascript:;"><span class="food-title">新开店铺朝阳国际酒店</span></a>
+                                            <span>区域：朝阳/ABC</span>
+                                            <span>人均：18元</span>
+                                            <span>人气：123</span>
+                                        </p>
+                                    </div>
+                                    <div class="hot-hotel">
+                                        <img src="img/pic02.png" alt="">
+                                        <p>
+                                            <a href="javascript:;"><span class="food-title">新开店铺朝阳国际酒店</span></a>
+                                            <span>区域：朝阳/XYZ</span>
+                                            <span>人均：80元</span>
+                                            <span>人气：121</span>
+                                        </p>
+                                    </div>
+                                    <div class="hot-hotel">
+                                        <img src="img/pic01.png" alt="">
+                                        <p>
+                                            <a href="javascript:;"><span class="food-title">新开店铺朝阳国际酒店</span></a>
+                                            <span>区域：朝阳/CBD</span>
+                                            <span>人均：10元</span>
+                                            <span>人气：1221</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <img class="ad-main" src="img/ad-main.png" alt="">
+                <div class="main-left-mid">
+                    <div class="lucky-day">
+                        <span>LUCKY DAY</span>
+                        <span>每日活动</span>
+                        <span>2019.7</span>
+                        <div class="today-theme">
+                            <img src="img/calendar01.png" alt="">
+                            <img src="img/today.png" alt="">
+                            <img src="img/date.png" alt="">
+                            <span>07</span>
+                            <span>21</span>
+                            <span>本期主题：美食的历史</span>
+                            <p>
+                                中华饮食文化源远流长,中国传统饮食文化既是中国传统文化中重要的组成部分。
+                            </p>
+                        </div>
+                        <div class="calendar">
+                            <div class="calendar-title">
+                                <ul>
+                                    <li>MON.</li>
+                                    <li>TUE.</li>
+                                    <li>WED.</li>
+                                    <li>THUR.</li>
+                                    <li>FRI.</li>
+                                    <li>SAT.</li>
+                                    <li>SUN.</li>
+                                </ul>
+                            </div>
+                            <div class="dates">
+                                <ul>
+                                    <li class="other-month">29</li>
+                                    <li class="other-month">30</li>
+                                    <li class="other-month">31</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li class="active-date" p = "今天也要元气满满吖！！" img="img/calendar02.png"><img src="img/calendar02.png" alt="">6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                    <li>15</li>
+                                    <li>16</li>
+                                    <li class="active-date" p = "今天也要加油鸭！！冲！！" img="img/calendar03.png"><img src="img/calendar03.png" alt="">17</li>
+                                    <li>18</li>
+                                    <li>19</li>
+                                    <li>20</li>
+                                    <li class="active-date" p = "今天也要可可爱爱吖！！" img="img/calendar01.png"><img src="img/calendar01.png" alt="">21</li>
+                                    <li>22</li>
+                                    <li>23</li>
+                                    <li>24</li>
+                                    <li>25</li>
+                                    <li>26</li>
+                                    <li>27</li>
+                                    <li>28</li>
+                                    <li>29</li>
+                                    <li>30</li>
+                                    <li>31</li>
+                                    <li class="other-month">1</li>
+                                    <li class="other-month">2</li>
+                                    <li class="other-month">3</li>
+                                    <li class="other-month">4</li>
+                                    <li class="other-month">5</li>
+                                    <li class="other-month">6</li>
+                                    <li class="other-month">7</li>
+                                    <li class="other-month">8</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="calendar-detail">
+                            <div class="calendar-detail-content">
+                                <img src="" alt="">
+                                <img src="img/today.png" alt="">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <span>RECOMMEND</span>
+                        <span>精彩推荐</span>
+                        <span>BEST</span>
+                        <div class="pics">
+                            <div class="main-pic">
+                                <img src="img/pic01.png " alt="">
+                            </div>
+                            <div class="pic-list">
+                                <img src="img/pic01.png" class="" alt="">
+                                <img src="img/pic02.png" class="" alt="">
+                                <img src="img/pic03.png" class="" alt="">
+                            </div>
+                            <a href="javascript:;">
+                                <span>夏天去哪儿玩~</span>
+                            </a>
+                        </div>
+                        <div class="recommend-lists">
+                            <div class="recommend-list">
+                                <img src="img/files.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>老店换新颜，丰泽园野重装亮相开张到店即享优惠价格</span>
+                                </a>
+                                <span>2019/07/12</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/shopping-car.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>生活中哪些包装有缺陷不方便使用利于收回</span>
+                                </a>
+                                <span>2019/07/14</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/shopping-car.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>老店换新颜，丰泽园野重装亮相开张到店即享优惠价格</span>
+                                </a>
+                                <span>2019/07/15</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/files.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>绿色植物利用光提供的能量,存叶绿体中把二氧化碳和水合成了淀粉等有机物</span>
+                                </a>
+                                <span>2019/07/22</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/shopping-car.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>生活中哪些包装有缺陷不方便使用利于收回</span>
+                                </a>
+                                <span>2019/07/23</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/shopping-car.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>老店换新颜，丰泽园野重装亮相开张到店即享优惠价格</span>
+                                </a>
+                                <span>2019/07/25</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/files.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>生活中哪些包装有缺陷不方便使用利于收回</span>
+                                </a>
+                                <span>2019/07/27</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/files.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>绿色植物利用光提供的能量,存叶绿体中把二氧化碳和水合成了淀粉等有机物</span>
+                                </a>
+                                <span>2019/07/28</span>
+                            </div>
+                            <div class="recommend-list">
+                                <img src="img/shopping-car.png" alt="">
+                                <span>|</span>
+                                <a href="javascript:;">
+                                    <span>生活中哪些包装有缺陷不方便使用利于收回</span>
+                                </a>
+                                <span>2019/07/30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subway">
+                        <div class="subway-tabs">
+                            <a class="subway-tab current-tab" href="javascript:;" subway-main="subway-main01">
+                                <span>SUBWAY</span> 地铁交通
+                                <img src="img/down.png" alt="">
+                            </a>
+                            <a class="map-tab " href="javascript:;" subway-main="subway-main02">
+                                <span> MAP</span> 生活圈
+                                <img src="img/down2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="subway-main">
+                            <img src="img/subway.png" class="current-subway" id="subway-main01">
+                            <img src="img/subway2.png" class="" id="subway-main02">
+                        </div>
+                    </div>
+                    <div class="bbs">
+                        <span>BBS</span>
+                        <span> 论坛</span>
+                        <div class="bbs-titles">
+                            <div class="bbs-title" bbs-list="one">
+                                <span>01</span>
+                                <span>快来看看有你想吃的吗</span>
+                                <span>有趣体验</span>
+                            </div>
+                            <div class="bbs-title" bbs-list="two">
+                                <span>02</span>
+                                <span>最适合夏天的美食都在这里</span>
+                                <span>吃瓜体验</span>
+                            </div>
+                            <div class="bbs-title" bbs-list="three">
+                                <span>03</span>
+                                <span>骨灰级美食家私藏</span>
+                                <span>扒友基地</span>
+                            </div>
+                            <div class="bbs-title" bbs-list="four">
+                                <span>04</span>
+                                <span>快来看看有你想吃的吗</span>
+                                <span>有趣体验</span>
+                            </div>
+                            <div class="bbs-title" bbs-list="five">
+                                <span>05</span>
+                                <span>最适合夏天的美食都在这里</span>
+                                <span>吃瓜体验</span>
+                            </div>
+                            <div class="bbs-title" bbs-list="six">
+                                <span>06</span>
+                                <span>骨灰级美食家私藏</span>
+                                <span>扒友基地</span>
+                            </div>
+                            <div class="bbs-title" bbs-list="seven">
+                                <span>07</span>
+                                <span>快来看看有你想吃的吗</span>
+                                <span>有趣体验</span>
+                            </div>
+                        </div>
+                        <div class="bbs-lists">
+                            <div class="bbs-list" id="one">
+                                <img src="img/calendar01.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>ONE</span>
+                            </div>
+                            <div class="bbs-list" id="two">
+                                <img src="img/calendar02.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>TWO</span>
+                            </div>
+                            <div class="bbs-list" id="three">
+                                <img src="img/calendar03.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>THREE</span>
+                            </div>
+                            <div class="bbs-list" id="four">
+                                <img src="img/calendar01.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>FOUR</span>
+                            </div>
+                            <div class="bbs-list" id="five">
+                                <img src="img/calendar02.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>FIVE</span>
+                            </div>
+                            <div class="bbs-list" id="six">
+                                <img src="img/calendar03.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>SIX</span>
+                            </div>
+                            <div class="bbs-list" id="seven">
+                                <img src="img/calendar01.png" alt="">
+                                <h1>跟随心灵的方向出发</h1>
+                                <h2>粉红顽皮Flora</h2>
+                                <span>SEVEN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="ad-main" src="img/ad-main.png" alt="">
+                <div class="main-left-bottom">
+                    <div class="lifestyle-advice">
+                        <span>LIFESTYLE ADVICE</span>
+                        <span> 知道分子</span>
+                        <div class="advice-tabs">
+                            <a class = 'current-tab' href="javascript:;" advice-list = "asking">
+                                <span>有人在问</span>
+                                <img src="img/down.png" alt="">
+                            </a>
+                            <a class = '' href="javascript:;" advice-list = "known">
+                                <span>有人知道</span>
+                                <img src="img/down2.png" alt="">
+                            </a>
+                            <a class = '' href="javascript:;" advice-list = "hot-questions">
+                                <span>热门问题</span>
+                                <img src="img/down2.png" alt="">
+                            </a>
+                        </div>
+                        <div id="asking" class="advice-lists current-list">
+                            <span class="question-title">标题</span>
+                            <span class="finish">状态</span>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/pass.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>休闲</span>]
+                                <span>适合和家人外出聚餐的地点</span>
+                                <img src="img/pass.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>繁忙中下午茶变出新花样</span>
+                                <img src="img/pass.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+
+                        </div>
+                        <div id="known" class="advice-lists">
+                            <span class="question-title">标题</span>
+                            <span class="finish">状态</span>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/pass.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+
+                        </div>
+                        <div id="hot-questions" class="advice-lists">
+                            <span class="question-title">标题</span>
+                            <span class="finish">状态</span>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/pass.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>美食</span>]
+                                <span>推荐几款性价比比较好的冰箱</span>
+                                <img src="img/pass.png" alt="">
+                            </div>
+                            <div class="advice-list">
+                                <span class="list-point"></span>
+                                [<span>购物</span>]
+                                <span>八月有哪些值得买|好物分享</span>
+                                <img src="img/flag.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot-people">
+                        <span>HOT</span>
+                        <span> 红人烧客</span>
+                        <div class="people">
+                            <ul>
+                                <li id="people-title">
+                                    <h1>HOT</h1>
+                                    <p>潮流服饰任我行</p>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：大宝贝</p>
+                                        <p>区域：江干区</p>
+                                        <p>人气：10086</p>
+                                    </a>
+                                    <img src="img/people01.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：大宝贝</p>
+                                        <p>区域：江干区</p>
+                                        <p>人气：10086</p>
+                                    </a>
+                                    <img src="img/people02.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：大宝贝</p>
+                                        <p>区域：江干区</p>
+                                        <p>人气：10086</p>
+                                    </a>
+                                    <img src="img/people04.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：大宝贝</p>
+                                        <p>区域：萧山区</p>
+                                        <p>人气：186</p>
+                                    </a>
+                                    <img src="img/people03.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：小宝贝</p>
+                                        <p>区域：江干区</p>
+                                        <p>人气：86</p>
+                                    </a>
+                                    <img src="img/people05.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：小可爱</p>
+                                        <p>区域：海曙区</p>
+                                        <p>人气：666</p>
+                                    </a>
+                                    <img src="img/people06.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：小可爱</p>
+                                        <p>区域：江干区</p>
+                                        <p>人气：96</p>
+                                    </a>
+                                    <img src="img/people07.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：宝宝</p>
+                                        <p>区域：海曙区</p>
+                                        <p>人气：16</p>
+                                    </a>
+                                    <img src="img/people08.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：宝贝</p>
+                                        <p>区域：江干区</p>
+                                        <p>人气：100</p>
+                                    </a>
+                                    <img src="img/people09.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：大宝贝</p>
+                                        <p>区域：鄞州区</p>
+                                        <p>人气：1146</p>
+                                    </a>
+                                    <img src="img/people10.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p>用户名：大宝宝宝</p>
+                                        <p>区域：杭州本地</p>
+                                        <p>人气：1236</p>
+                                    </a>
+                                    <img src="img/people02.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="help">
+                        <span>HELP</span>
+                        <span> 在线帮助</span>
+                        <p>如果您有任何问题，都可以通过全国免费电话，或通过在线客服与我们联系！</p>
+                    </div>
+                    <div class="media">
+                        <span>100DU IN THE MEDIA</span>
+                        <span> 媒体声音</span>
+                        <div class="media-lists">
+                            <div class="media-list" id="media01">
+                                <span>凤凰网：100度享乐网视频专题</span>
+                            </div>
+                            <div class="media-list" id="media02">
+                                <span>中华网：100度享乐网，美食专栏</span>
+                            </div>
+                            <div class="media-list" id="media03">
+                                <span>中国新闻网：互联网上的视频橱窗</span>
+                            </div>
+                            <div class="media-list" id="media04">
+                                <span>新华网：享乐主义的社会</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="load">
+                    <span>LOAD</span> 登陆
+                    <form action="javascript:;">
+                        <label for="username">用户名</label>
+                        <input type="text" name="username" id="username">
+                        <input type="checkbox" name = "rememberMe">记住我
+                        <br><br>
+                        <label for="pwd">密码</label>
+                        <input type="password" name="pwd" id="pwd">
+                        <input type="submit" value="">
+                    </form>
+                    <div id="newUser">
+                        <a href="javascript:;"><span class="list-point"></span>新用户注册</a>
+                        <a href="javascript:;"><span class="list-point"></span>忘记密码了</a>
+                    </div>
+                </div>
+                <div class="ad">
+                    <img src="img/ad.png" alt="">
+                    <img src="img/ad2.png" alt="">
+                </div>
+                <div class="coupons">
+                    <span id="coupons">COUPONS</span> <span> 抢券儿</span>
+                    <div class="coupons-tabs">
+                        <a class = 'current-tab' href="javascript:;" coupons-main ="coupons-lists01">
+                            <span>人气</span>
+                            <img src="img/down.png" alt="">
+                        </a>
+                        <a class = '' href="javascript:;" coupons-main ="coupons-lists02">
+                            <span>推荐</span>
+                            <img src="img/down2.png" alt="">
+                        </a>
+                        <a class = '' href="javascript:;" coupons-main ="coupons-lists03">
+                            <span>最新</span>
+                            <img src="img/down2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="coupons-main current-coupons-main" id="coupons-lists01">
+                        <span class="shop-name">商店名</span>
+                        <span class="save-money">省钱</span>
+                        <span class="discount">打折</span>
+                        <div class="coupons-lists">
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">老北京一尊皇牛火锅</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">老北京一尊皇牛火锅</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">老北京一尊皇牛火锅</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">老北京一尊皇牛火锅</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">老北京一尊皇牛火锅</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">老北京一尊皇牛火锅</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="coupons-main" id="coupons-lists02">
+                        <span class="shop-name">商店名</span>
+                        <span class="save-money">省钱</span>
+                        <span class="discount">打折</span>
+                        <div class="coupons-lists">
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">南京大排档超好吃哦</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">南京大排档超好吃哦</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">南京大排档超好吃哦</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">南京大排档超好吃哦</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">南京大排档超好吃哦</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">南京大排档超好吃哦</span><span class="coupons-list-save">12%</span> <span class="save345">345</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="coupons-main" id="coupons-lists03">
+                        <span class="shop-name">商店名</span>
+                        <span class="save-money">省钱</span>
+                        <span class="discount">打折</span>
+                        <div class="coupons-lists">
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">杭州老字号灌汤小笼</span><span class="coupons-list-save">20%</span> <span class="save345">505</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">杭州老字号灌汤小笼</span><span class="coupons-list-save">20%</span> <span class="save345">505</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">杭州老字号灌汤小笼</span><span class="coupons-list-save">20%</span> <span class="save345">505</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">杭州老字号灌汤小笼</span><span class="coupons-list-save">20%</span> <span class="save345">505</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">杭州老字号灌汤小笼</span><span class="coupons-list-save">20%</span> <span class="save345">505</span>
+                                </a>
+                            </div>
+                            <div class="coupons-list">
+                                <a href="javascript:;">
+                                    <span class="list-point"></span><span class="beijing">杭州老字号灌汤小笼</span><span class="coupons-list-save">20%</span> <span class="save345">505</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="shop">
+                    <span id="shop">SHOP</span>
+                    <span> 今日推荐</span>
+                    <div class="shop-lists">
+                        <div class="shop-list">
+                            <img src="img/food.png" alt="">
+                            <img src="img/save.png" alt="">
+                            <span>省</span>
+                            <span>20%</span>
+                            <h1>汉莱国际美食百汇</h1>
+                            <span>区域 ：</span>
+                            <span>朝阳/CBD</span>
+                            <span>口味 ：</span>
+                            <span>创意中餐</span>
+                        </div>
+                        <div class="shop-list">
+                            <img src="img/food.png" alt="">
+                            <img src="img/save.png" alt="">
+                            <span>省</span>
+                            <span>20%</span>
+                            <h1>汉莱国际美食百汇</h1>
+                            <span>区域 ：</span>
+                            <span>朝阳/CBD</span>
+                            <span>口味 ：</span>
+                            <span>创意中餐</span>
+                        </div>
+                        <div class="shop-list">
+                            <img src="img/food.png" alt="">
+                            <img src="img/save.png" alt="">
+                            <span>省</span>
+                            <span>20%</span>
+                            <h1>汉莱国际美食百汇</h1>
+                            <span>区域 ：</span>
+                            <span>朝阳/CBD</span>
+                            <span>口味 ：</span>
+                            <span>创意中餐</span>
+                        </div>
+                        <div class="shop-list">
+                            <img src="img/food.png" alt="">
+                            <img src="img/save.png" alt="">
+                            <span>省</span>
+                            <span>20%</span>
+                            <h1>汉莱国际美食百汇</h1>
+                            <span>区域 ：</span>
+                            <span>朝阳/CBD</span>
+                            <span>口味 ：</span>
+                            <span>创意中餐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop360">
+                    <span>360°SHOP</span>
+                    <span> 全景逛店</span>
+                    <img src="img/pic02.png" alt="">
+                    <p>工作日专属下午茶甜点</p>
+                </div>
+                <div class="shop-count">
+                    <span>SHOP</span>
+                    <span> 折扣店</span>
+                    <div class="shop-list">
+                        <img src="img/food.png" alt="">
+                        <img src="img/save.png" alt="">
+                        <span>省</span>
+                        <span>20%</span>
+                        <h1>汉莱国际美食百汇</h1>
+                        <span>区域 ：</span>
+                        <span>朝阳/CBD</span>
+                        <span>口味 ：</span>
+                        <span>创意中餐</span>
+                    </div>
+                    <div class="advice-lists">
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>休闲</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>休闲</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>美食</span>]
+                            <span>老北京一尊皇牛店</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>购物</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>美食</span>]
+                            <span>老北京一尊皇牛店</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>购物</span>]
+                            <span>老北京一尊皇牛店</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>休闲</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="coupons-join">
+                    <span>COUPONS</span>
+                    <span> 最新加盟</span>
+                    <div class="coupons-shops">
+                        <img src="img/pic02.png" alt="">
+                        <h1>汉莱国际美食百汇</h1>
+                        <span>区域 ：</span>
+                        <span>朝阳/CBD</span>
+                        <span>口味 ：</span>
+                        <span>创意中餐</span>
+                    </div>
+                    <div class="coupons-shops">
+                        <img src="img/pic01.png" alt="">
+                        <h1>汉莱国际美食百汇</h1>
+                        <span>区域 ：</span>
+                        <span>朝阳/CBD</span>
+                        <span>口味 ：</span>
+                        <span>创意中餐</span>
+                    </div>
+                    <div class="advice-lists">
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>休闲</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>休闲</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>美食</span>]
+                            <span>老北京一尊皇牛店</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>购物</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>美食</span>]
+                            <span>老北京一尊皇牛店</span>
+                        </div>
+                        <div class="advice-list">
+                            <span class="list-point"></span>
+                            [<span>休闲</span>]
+                            <span>瀚茶缘（雍和宫店）</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="links">
+                <a href="javascript:;">关于我们</a>
+                <span>|</span>
+                <a href="javascript:;">联系我们</a>
+                <span>|</span>
+                <a href="javascript:;">版权声明</a>
+                <span>|</span>
+                <a href="javascript:;">加入我们</a>
+                <span>|</span>
+                <a href="javascript:;">问题反馈</a>
+                <span>|</span>
+                <a href="javascript:;">网站地图</a>
+                <span>|</span>
+                <a href="javascript:;">友情链接</a>
+                <span>|</span>
+                <a href="javascript:;">网站地图</a>
+                <span>|</span>
+                <a href="javascript:;">视频索引</a>
+                <p>Copyright @ 2019 www.100du.com 100度享乐网 版权所有 京ICP证070374号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

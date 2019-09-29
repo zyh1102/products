@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bird</title>
+    <link rel="stylesheet" href="css/bird.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="flag">
+                <img src="./img/ChinaFlag.png" alt="">
+                <span><a href="javascript:;">&nbsp;中文版&nbsp;|&nbsp;</a></span>
+                <img src="./img/EnglishFlag.png" alt="">
+                <span><a href="javascript:;">English</a></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;">公司介绍</a></li>
+                    <li><a href="javascript:;">产品展示</a></li>
+                    <li><a href="javascript:;">新闻中心</a></li>
+                    <li><a href="javascript:;">办公平台</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">在线联系</a></li>
+                    <li><a href="javascript:;">会员登陆</a></li>
+                    <li><a href="javascript:;">公历时间</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div id="dream">
+                <span id="back_bg"></span>
+                <span id="next_bg"></span>
+
+                <a href="javascript:;" id="buttonLeft"></a>
+                <a href="javascript:;" id="buttonRight"></a>
+
+                <ul id="dreamList">
+                    <li class="cur"><img src="img/01.png" alt="1111" title="11111"></li>
+                    <li><img src="img/02.png" alt="2222" title="22222"></li>
+                    <li><img src="img/03.png" alt="3333" title="33333"></li>
+                    <li><img src="img/04.png" alt="3333" title="44444"></li>
+                </ul>
+
+
+            </div>
+            <div class="login">
+                <input type="text" name="name" placeholder="请输入用户名">
+                <input type="password" name="psw" >
+                <a href="javascript:;" class="login" onclick="showLogin()" ></a>
+                <a href="javascript:;" class="reg" onclick="showRegister()">立即注册</a>
+                <div class="allA">
+                    <ul>
+                        <li><a href="javascript:;"><img src="img/plus.png" alt=""></a></li>
+                        <li><a href="javascript:;"><span>&nbsp;分享到:</span></a></li>
+                        <li><a href="javascript:;"><img src="img/qqzone.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/sina.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/tecent.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/ren.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/s_07.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/5.8万.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="popWindow" class="popWindow" style="display: none;"></div>
+            <div id="loginLayer" class="loginLayer" >
+                <h1>登录界面</h1>
+                <br><br>
+                <lable style="left: 50%">手机号：&nbsp;</lable>
+                <input type="text">
+                <br><br>
+                <lable style="left: 50%">密码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</lable>
+                <input type="text">
+                <br><br>
+                <button><a href="#" onclick="closeDiv()"  style="cursor:pointer;text-decoration: none;">完成</a></button>
+            </div>
+            <div id="registerLayer" class="registerLayer" >
+                <h1>注册界面</h1>
+                <br><br>
+                <lable style="left: 50%">手机号：&nbsp;</lable>
+                <input type="text">
+                <br><br>
+                <lable style="left: 50%">密码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</lable>
+                <input type="text">
+                <br><br>
+                <button><a href="#" onclick="closeDiv()"  style="cursor:pointer;text-decoration: none;">完成</a></button>
+            </div>
+            <div class="intro">
+                <div class="left">
+                    <img src="img/companyProfile.png" alt="公司简介">
+                    <a href="javascript:;"><img src="img/food1.png" alt="pic" class="pic"></a>
+                    <p>  HTG菜鸟公司是一家大型的公司，发展的路上经历了很多不一样的经历，是我好好学习其刨根儿的事情</p>
+                    <p> 性炭专家,紧密合作，专业从事各类专用活性炭研发生公司公司拥有 。自主知识产权...</p>
+                </div>
+                <div class="mid">
+                    <img src="img/newsCenter.png" alt="新闻中心">
+                    <a href="javascript:;"><img src="img/food2.png" alt="pic" class="pic"></a>
+                    <p><a href="javascript:;">让品位到家，一切尽善尽美欧</a></p>
+                    <p>在企业发展过程中，公司确立了以科技创新为先导的立业宗旨...<a href="">[详细>>]</a></p>
+                    <img src="img/dot.png" alt="" class="dot1">
+                    <img src="img/dot.png" alt="" class="dot2">
+                    <ul>
+                        <li><a href="javascript:;">用科技创造精品饭菜，追求卓越品质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013-01-03</li>
+                        <li><a href="javascript:;">菜鸟公司坚持以高标准配置生产设备</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013-01-03</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="img/contactUs.png" alt="联系我们">
+                    <img src="img/b_12.png" alt="">
+                    <ul>
+                        <li>地址：杭州下沙工业园信源南路1314号</li>
+                        <li>邮编：311000</li>
+                        <li>电话：0571-8711044&nbsp;&nbsp;18814845441</li>
+                        <li>传真：0571-8910338</li>
+                        <li>E-mail：bird@163.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="good">
+                <img src="img/product.png" alt="产品展示">
+                <div id="a">
+                    <a href="javascript:;" id="back_pro"></a>
+                    <a href="javascript:;" id="next_pro"></a>
+                </div>
+                <ul id="proList">
+                    <li><a href="javascript:;"><img src="img/10.png" alt="1"></a></li>
+                    <li><a href="javascript:;"><img src="img/11.png" alt="2"></a></li>
+                    <li><a href="javascript:;"><img src="img/12.png" alt="4"></a></li>
+                    <li><a href="javascript:;"><img src="img/14.png" alt="5"></a></li>
+                    <li><a href="javascript:;"><img src="img/13.png" alt="3"></a></li>
+
+                    <li><a href="javascript:;"><img src="img/10.png" alt="1"></a></li>
+                    <li><a href="javascript:;"><img src="img/11.png" alt="2"></a></li>
+                    <li><a href="javascript:;"><img src="img/12.png" alt="4"></a></li>
+                    <li><a href="javascript:;"><img src="img/14.png" alt="5"></a></li>
+                    <li><a href="javascript:;"><img src="img/13.png" alt="3"></a></li>
+                </ul>
+                <ul id="proName">
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                    <li><a href="javascript:;">产品名称</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="addr">
+                <p>地址：杭州下沙工业园区信源南路1314号　　邮编：311000</p>
+                <p>电话：18814845441　　传真：8555566   网址：Http：//www.txianren.com　　E-mail：mywebsite 黑土哥网站管理</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="js/tools.js"></script>
+<script src="js/bird.js"></script>

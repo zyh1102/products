@@ -1,0 +1,435 @@
+html,body, div,span,input,h1,h2,h3,h4,h5,h6,p,a,em,font,img,strong,figure,section,article,pre,footer,button,var,b,u,i,ol,ul,li,form,label,table,tr,th,td{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    font-size: 12px;
+    outline: none;
+}
+#head-bar{
+    height: 84px;
+    background: #262f38;
+}
+#head-bar .head-bar1{
+    position: relative;
+}
+#head-logo{
+    padding-top: 23px;
+    padding-left: 54px;
+}
+#navbar{
+    margin: 0;
+    border: none;
+}
+#head-bar{
+    margin-bottom: 0;
+}
+#nav-bar ul{
+    padding-top: 20px;
+}
+#nav-bar ul li{
+    width: 100px;
+    white-space: nowrap;
+    background: #262f38;
+}
+#head-bar #nav-bar ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Cambria Math";
+}
+
+#head-bar #nav-bar ul li.active {
+    border-radius: 10px;
+    background: #0ab3d4;
+}
+#head-bar #nav-bar ul li.active a{
+    background: none;
+    color: #262f38;
+}
+#search{
+    position: relative;
+    padding-top: 30px;
+}
+#search span{
+    color: #fff;
+    margin: 5px;
+}
+#search input{
+    width: 80%;
+    display: inline-block;
+    margin-right: 5%;
+}
+#search-icon{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+#search-icon span{
+    color: #fff;
+}
+#head-grafic{
+    padding-top: 40px;
+}
+#head-grafic span{
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin-right: 8px;
+    font-size: 14px;
+}
+.head-bar-bottom{
+    height: 7px;
+    background: linear-gradient(#0ab3d4,transparent);
+}
+
+
+#carousel .item{
+}
+
+#carousel .item h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-shadow: 5px 5px #0ab3d4;
+    transform: translateX(-50%);
+    color: #076d80;
+    font-size: 64px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+#carousel .item h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Segoe Print';
+    font-weight: bold;
+    text-shadow: 2px 1px #87e8c2;
+    color: #2d9a2c;
+    font-size: 36px;
+    white-space: nowrap;
+}
+#carousel .item button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+#read-more,#learn-more{
+    width: 100%;
+    background: #0ab3d4;
+    text-align: center;
+}
+#read-more p,#learn-more p{
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Cambria Math";
+    white-space: nowrap;
+    color: #fff;
+}
+#read-more button,#learn-more button{
+    background: #262f36;
+    display: inline-block;
+    margin: 5px auto;
+}
+
+
+
+
+
+#service{
+    padding: 30px 20px;
+}
+#service-title,#best-title,#more-title,#products-title,#clients-title span{
+    width: 100%;
+    font-size: 24px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: "Cambria Math";
+}
+#clients-title strong{
+    width: 100%;
+    white-space: nowrap;
+    font-size: 24px;
+    font-family: "Cambria Math";
+}
+#service-title+h3,#best-title+h3,#more-title+h3,#products-title+h3,#clients-title+h3{
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: "Segoe Print";
+    margin-bottom: 45px;
+}
+#service .service-pics{
+    width: 100%;
+    text-align: center;
+    margin: 0 10px;
+}
+#service .service-pics .service-pic{
+    padding: 30px 10px;
+    text-align: left;
+}
+#service .service-pics .service-pic img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+#service .service-pics .service-pic h1:nth-child(2) {
+    margin: 10px 0;
+    font-size: 16px;
+}
+#best-features,#more-features,#products,#clients{
+    padding: 40px 30px 30px;
+    width: 100%;
+    border-top: 1px solid #efefef;
+}
+#best-features,#more-features{
+    height: 400px;
+}
+#products{
+    height: 450px;
+}
+#products ul{
+    width: 100%;
+    margin: 0 auto;
+}
+#products ul li{
+    width: 225px;
+    height: 270px;
+    text-align: center;
+    margin: 0 20px;
+    float: left;
+}
+#products ul li img{
+    width: 225px;
+    height: 225px;
+}
+#products ul li h1{
+    font-weight: normal;
+    font-size: 14px;
+}
+#products ul li span{
+    font-size: 10px;
+    font-weight: normal;
+}
+#clients{
+    height: 300px;
+}
+#clients p:nth-child(3){
+    width: 80%;
+    margin: 0 auto;
+}
+#clients p:nth-child(4){
+    width: 40%;
+    margin: 0 auto;
+}
+#clients #line{
+    width: 30%;
+    height: 2px;
+    background: #adadad;
+    margin: 15px auto;
+}
+#best-features img,#more-features img{
+    float: left;
+    display: inline-block;
+    width: 35%;
+    margin: 0 15px;
+}
+.features-content{
+    margin: 30px 0;
+    float: left;
+    width: 60%;
+    display: inline-block;
+}
+.features-content span{
+    font-size: 16px;
+    font-family: "Cambria Math";
+    white-space: nowrap;
+    margin-top: 20px;
+}
+.features-content p{
+    color: #9a978f;
+    font-size: 12px;
+    line-height: 2em;
+    margin-top: 15px;
+    font-family: "Cambria Math";
+    font-weight: normal!important;
+}
+.features-content a{
+    font-size: 14px;
+    color: #49c5e1;
+    font-family: "Cambria Math";
+    text-decoration: underline;
+    display: block;
+    margin: 20px 0;
+}
+
+
+@media screen and (max-width: 767px){
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border: none;
+    }
+    #nav-bar,#nav-bar ul{
+        padding-top: 0;
+        width: 100%;
+    }
+    #head-bar #nav-bar ul li{
+        z-index: 1;
+        width: 100%;
+    }
+    #head-bar{
+        padding-top: 23px;
+        padding-left:54px;
+        height: 84px;
+    }
+    /* 修改图片的大小 *//**********************/
+    .carousel-inner .item img{}
+
+    #read-more,#learn-more{
+        padding: 0!important;
+        margin: 0;
+        background: none !important;
+    }
+    #read-more button,#learn-more button{
+        width: 100%!important;
+        padding: 15px 0 !important;
+        margin: 0!important;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    #service .service-pics .service-pic{
+        padding: 10px !important;
+    }
+    #service .service-pics .service-pic h1:nth-child(2){
+        font-size: 20px !important;
+    }
+    #service .service-pics .service-pic p.text-muted{
+        display: none;
+    }
+    #search-icon{
+        left: 200px;
+    }
+
+    #service .service-pics .service-pic{
+        text-align: center;
+    }
+    #best-features{
+        height: 200px;
+    }
+    #products{
+        padding: 30px 50px 0;
+        height: 50%;
+        width: 100%;
+    }
+    #products ul{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    #products ul li img{
+        width: 100%;
+    }
+    #products ul li{
+        width: 60%;
+    }
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    #learn-more br{
+        display: none;
+    }
+    #learn-more br:last-of-type{
+        display: block;
+    }
+    #products{
+        padding: 30px 50px 0;
+        height: 50%;
+        width: 100%;
+    }
+    #products ul{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #products ul li img{
+        width: 100%;
+    }
+    #products ul li{
+        width: 40%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #products{
+        padding: 30px 50px 0;
+        height: 50%;
+        width: 100%;
+    }
+    #products ul{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #products ul li{
+        width: 20%;
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+}
+@media (min-width: 1200px) {
+    #products{
+        padding: 30px 50px 0;
+        width: 100%;
+    }
+    #products ul{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #products ul li{
+        width: 20%;
+    }
+    #read-more{
+        width: 100%;
+        padding: 0 50px;
+        height: 50px;
+        line-height: 40px;
+        position: relative;
+    }
+    #learn-more{
+        width: 100%;
+        padding: 0 50px;
+        position: relative;
+    }
+    #read-more p,#learn-more p{
+        float: left;
+    }
+    #read-more button,#learn-more button{
+        height: 35px;
+        clear: both;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+    #carousel{
+        width: 1170px !important;
+        margin: 0 auto;
+    }
+}
+
+

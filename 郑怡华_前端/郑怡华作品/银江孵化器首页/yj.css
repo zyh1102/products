@@ -1,0 +1,519 @@
+html, body, figure, div, span, input, h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, var, b, u, i, ol, ul, li, form, label, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    color: #3e3e3e;
+    font-size: 14px;
+    outline: none;
+}
+
+body {
+    background: url("img/body-bg.png") repeat-x;
+}
+
+.container, .head, .main, .foot {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head {
+}
+
+.head header {
+    height: 104px;
+}
+
+.head header .user {
+    float: right;
+    width: 320px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.head header .user img {
+    position: absolute;
+    right: 250px;
+}
+
+.head header .user span {
+    position: absolute;
+    right: 140px;
+}
+
+.head header .user a {
+    position: absolute;
+    right: 75px;
+}
+
+.head header .user button {
+    width: 65px;
+    height: 35px;
+    background: #f18b33;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.triangle {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #ffffff;
+    width: 0;
+    height: 0;
+}
+
+.menu {
+    width: 1200px;
+    height: 70px;
+}
+
+.active-title {
+    background: linear-gradient(#ffc44d, #d09317);
+}
+
+.menu ul li {
+    float: left;
+    width: 96px;
+    margin-left: 25px;
+    text-align: center;
+    padding-top: 18px;
+    cursor: pointer;
+}
+
+.menu ul li .title-menu {
+    width: 96px;
+    height: 52px;
+    transition: all 0.2s;
+}
+
+.menu ul li .title-menu:hover {
+    transform: rotateZ(15deg);
+    background: #ecb037;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #9ba8ad;
+}
+.menu ul li .title-menu p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu ul li .title-menu p span {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.menu ul li .sub-menu {
+    background: #2f65c1;
+    display: none;
+}
+
+.menu ul li .sub-menu a {
+    display: block;
+    width: 96px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+.main .main-left {
+    float: left;
+    width: 750px;
+    height: 765px;
+    padding-top: 30px;
+}
+
+.main .tabs {
+    height: 32px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.main .tabs span:hover {
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.main .tabs span:hover {
+    text-shadow: #e0e0e0 3px 3px 2px;
+    color: #2f64c0;
+    transform: translate(5%, 5%);
+}
+
+.main .tabs span {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 17px;
+}
+
+.main .tabs span span {
+    display: inline-block;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.main .main-left .tabs ul.tab-list {
+    position: relative;
+}
+
+.main .main-left .tabs ul.tab-list li {
+    float: left;
+    width: 85px;
+    margin-right: 32px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.main .main-left .tabs ul.tab-list li a.active {
+    color: #2f64c0;
+}
+
+.main .main-left .tabs ul.tab-list li#tab-bg {
+    width: 90px;
+    height: 4px;
+    background-color: #2f64c0;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+.main .main-left .sub-tabs {
+    position: relative;
+    height: 210px;
+    padding-top: 20px;
+}
+
+.main .main-left .sub-tab {
+    width: 750px;
+    height: 210px;
+    display: none;
+    position: absolute;
+}
+
+.main .main-left .current-tab {
+    display: block;
+}
+
+.main .main-left .sub-tab figure {
+    float: left;
+    width: 300px;
+
+}
+
+.main .main-left .sub-tab figure p {
+    margin: 15px 3px 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.main .main-left .sub-tab ul {
+    float: right;
+    width: 445px;
+    margin-left: 5px;
+}
+
+.main .main-left .sub-tab ul li {
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main .main-left .sub-tab ul li:hover {
+    transform: scale(1.1) translate(3%, 0);
+}
+
+.main .main-left .sub-tab ul li a:hover {
+    font-size: 16px;
+    color: #2f64c0;
+    text-shadow: #65ccf9 3px 3px 2px;
+}
+
+.main .main-left .sub-tab ul li .point {
+    width: 3px;
+    height: 3px;
+    background: #000;
+    display: inline-block;
+    margin: 3px 2px;
+}
+
+.main .main-left .button-group {
+    width: 750px;
+    height: 62px;
+}
+
+.main .main-left .button-group a {
+    display: inline-block;
+    border: 1px solid #b5cde2;
+    border-radius: 10px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 30px;
+    width: 150px;
+    background: #dceff6;
+    color: #2f64c0;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.main .main-left .button-group a:hover {
+    box-shadow: 3px 3px 5px 3px #9ba8ad;
+    transform: scale(1.05);
+}
+
+.main .main-left .tour {
+    width: 750px;
+    height: 435px;
+    padding-top: 29px;
+}
+
+.main .main-left .tour .tour-left {
+    width: 440px;
+    height: 404px;
+    float: left;
+    background: #ffffff;
+}
+
+.main .main-left .tour .tour-left figure {
+    width: 440px;
+    height: 353px;
+    padding-top: 23px;
+}
+
+.main .main-left .tour .tour-left figure img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.main .main-left .tour .tour-left figure img:hover {
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 1px #9ba8ad;
+    transform: scale(1.1);
+
+}
+
+.main .main-left .tour .tour-right {
+    width: 270px;
+    height: 361px;
+    padding: 15px;
+    margin-top: 13px;
+    background: #f4f4f4;
+    float: right;
+    position: relative;
+}
+
+.main .main-left .tour .tour-right h1 {
+    padding-bottom: 10px;
+}
+
+.main .main-left .tour .tour-right p {
+    font-size: 14px;
+    line-height: 2.5em;
+    text-align: justify;
+    color: #666666;
+}
+
+.main .main-left .tour .tour-right a {
+    position: absolute;
+    bottom: 28px;
+    right: 14px;
+    font-size: 14px;
+    color: #d7393e;
+}
+
+.main .main-right {
+    float: left;
+    margin-left: 45px;
+    width: 405px;
+    height: 795px;
+}
+
+.main .main-right .activities {
+    height: 388px;
+    padding-top: 30px;
+    background: #ffffff;
+}
+
+.main .main-right .activities .activity {
+    height: 90px;
+    padding-top: 25px;
+}
+
+.main .main-right .activities .activity img {
+    float: left;
+}
+
+.main .main-right .activities .activity aside {
+    width: 277px;
+    margin-left: 18px;
+    padding-top: 5px;
+    float: left;
+}
+
+.main .main-right .activities .activity aside h1 {
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main .main-right .activities .activity aside h1:hover {
+    text-shadow: #e0e0e0 3px 3px 2px;
+    color: #326acb;
+    transform: translate(0, 5%);
+}
+
+.main .main-right .activities .activity aside p {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #b8b8b8;
+}
+
+.main .main-right .model {
+    height: 338px;
+    padding-top: 38px;
+}
+
+.main .main-right .model ul {
+    margin: 10px 0 20px 5px;
+}
+
+.main .main-right .model ul li {
+    text-align: center;
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.main .main-right .model ul li:hover {
+    transform: rotateY(360deg);
+}
+
+.main .services {
+    padding-top: 20px;
+    clear: both;
+    height: 355px;
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -1160px;
+    }
+}
+
+.main .services figure {
+    width: 1160px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .services figure ul {
+    width: 2400px;
+    position: absolute;
+    -webkit-animation: 20s move infinite linear;
+}
+
+.main .services figure ul:hover {
+    animation-play-state: paused;
+}
+.main .services figure ul li {
+    float: left;
+    margin-left: 32px;
+    padding-top: 20px;
+    font-size: 14px;
+    transition: 1s;
+}
+.main .services figure ul li:hover .name{
+    font-size: 16px;
+    color: #326acb;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.main .services figure ul li img{
+    transition: 1s;
+}
+.main .services figure ul li img:hover{
+    transform: rotateY(360deg);
+}
+.main .services figure ul li .service .name {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #999999;
+}
+
+.main .services figure ul li .service .price {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 9px;
+}
+
+.main .services figure ul li .service .price span {
+    color: #ff5a00;
+}
+
+.main .services figure ul li .service .advantage {
+    font-size: 12px;
+    color: #999999;
+}
+
+.foot {
+    height: 150px;
+    padding-top: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.foot nav {
+    display: inline-block;
+}
+
+.foot nav a {
+    font-size: 15px;
+    color: #fff;
+}
+
+.foot nav span {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.foot pre {
+    padding-top: 20px;
+    line-height: 2em;
+    text-align: left;
+    color: #666666;
+    font-size: 12px;
+}
+
+.foot figure {
+    position: absolute;
+    right: 30px;
+    top: 70px;
+}

@@ -1,0 +1,378 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i,center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    background: url("../img/body_bg.png") repeat-x;
+}
+
+.head,.main,.foot{
+    width: 1100px;
+    margin: 0 auto;
+}
+.head{
+    position: relative;
+}
+.head .headBar{
+    height: 36px;
+    background: url("../img/head_bg.png") no-repeat;
+    /*
+    width: 100%;
+    position: fixed;
+    top: 0;
+    */
+
+}
+.head .hello{
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    left: 8px;
+}
+.head .hello ul{}
+.head .hello ul li{
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.head .list{
+    position: absolute;
+    right: 0px;
+}
+.head .list ul{
+    float: right;
+    width: 105px;
+    font-size: 12px;
+}
+.head .list ul:hover{
+    cursor: pointer;
+}
+.head .list ul li{
+    background: url("../img/li_bg2.png");
+    text-align: center;
+    width: 105px;
+    height: 36px;
+    line-height: 36px;
+    display: none;
+}
+.head img#logo{}
+.head .links a{
+    display: inline-block;
+    position: absolute;
+    width: 90px;
+    height: 36px;
+}
+.head #consult{
+    display: inline-block;
+    position: absolute;
+    width: 95px;
+    height: 18px;
+    top: 94px;
+    left: 739px;
+}
+.head .info img{
+    position: absolute;
+    top: 127px;
+    left: 429px;
+    z-index: 1;
+    display: none;
+}
+.banner{
+    width: 1900px;
+    height: 629px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner .bannerBar{
+    background: url("../img/banner-bar.png") no-repeat;
+    position: relative;
+    margin: 0 auto;
+    width: 1900px;
+    height: 35px;
+}
+.banner #bannerBar{
+    position: absolute;
+    left: 400px;
+}
+.banner #bannerBar li{
+    float: left;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.banner #bannerBar li a{
+    color: #FFFFFF;
+}
+.main{}
+.main #recommend{
+    display: inline-block;
+    width: 1100px;
+    text-align: center;
+    border-bottom: 1px dashed #000000;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    font-family: "微软雅黑";
+    font-size:30px;
+    font-weight: 500;
+}
+.main .saleImg{
+    width: 1100px;
+    height: 261px;
+}
+.main .saleImg ul{
+    margin: 0 11px;
+}
+.main .saleImg ul li{
+    width: 200px;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+}
+.main .saleImg ul#img li{
+    height: 200px;
+    border: 2px solid #d9e6ec;
+}
+.main .saleImg ul#img li img{
+    height: 200px;
+    width: 200px;
+}
+.main .saleImg ul#price li span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #768e9a;
+    display: block;
+    margin: 5px 0;
+}
+.main .saleImg ul#buy li{
+    height: 22px;
+}
+.main .company{
+    clear: both;
+    padding-top: 13px;
+    margin: 20px 18px;
+    height: 296px;
+    width: 1100px;
+}
+.main .company .company-left{
+    float: left;
+    position: relative;
+    width: 432px;
+    height: 272px;
+}
+.main .company .company-left ul{
+    width: 2160px;
+}
+.main .company .company-left ul#imgList li{
+    width: 432px;
+    height: 272px;
+    position: absolute;
+    /*float: left;*/
+}
+#navDiv{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+#navDiv a {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: #f1fbfe;
+    margin: 5px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#navDiv a:hover{
+    background: #460303;
+}
+#navDiv a:active{
+    background: black;
+}
+.main .company .right{
+    width: 582px;
+    height: 270px;
+    border-left: 1px dashed #000;
+    padding-left: 46px;
+    float: right;
+    font-size: 14px;
+    background: url("../img/flower.png") no-repeat;
+    position: relative;
+}
+.main .company .right p{
+    color: #666666;
+    display: block;
+    width: 491px;
+    margin: 8px 0;
+    text-indent: 2em;
+}
+.main .company .right #input-go{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.main .company .right #input-go input{
+    display: inline-block;
+    width: 187px;
+    height: 22px;
+    border: 2px solid #cccccc;
+}
+.main .company .right #input-go a#go{
+    display: inline-block;
+    background: url("../img/go.png") no-repeat;
+    color: #346182;
+    height: 26px;
+    width: 28px;
+}
+.main .company .right ul li{
+    float: left;
+    font-size: 12px;
+    margin-right: 17px;
+}
+.main .fashion{
+    width: 1100px;
+    height: 789px;
+    text-align: center;
+    background-color: #e4e4e4;
+    padding-top: 36px;
+}
+.main .fashion span#recommend_new{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    width: 220px;
+    border-bottom: 1px dashed #000000;
+    font-weight: 400;
+    font-size: 30px;
+}
+.fashion div.pics{
+    width: 1096px;
+    height: 350px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+.fashion div.pic{
+    width: 270px;
+    height: 350px;
+    background-color: #e0ebf1;
+    float: left;
+    margin: 0 2px;
+}
+.fashion div.pic img{
+    width: 265px;
+    height: 285px;
+    border: 1px solid #ffffff;
+}
+.fashion div.pic p{
+    display: inline-block;
+    font-size: 12px;
+    float: left;
+    margin-left:8px;
+    margin-top: 6px;
+}
+.fashion div.pic p span{
+    color: #ae5067;
+}
+.fashion div.pic a{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #a9425a;
+}
+.fashion div.pic a span{
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 3px ;
+    width: 36px;
+    height: 36px;
+    letter-spacing: 0.1em;
+}
+.main .mainBanner{
+    width: 1100px;
+    height: 341px;
+    margin-top: 34px;
+    margin-bottom: 50px;
+}
+
+
+.foot{
+    width: 1100px;
+    height: 220px;
+    margin-top: 100px;
+}
+.foot .foot-left{
+    width: 213px;
+    height: 168px;
+    float: left;
+}
+.foot .foot-left img{
+    margin: 70px 0;
+    margin-left: 12px;
+}
+.foot .foot-right{
+    float: left;
+    width: 887px;
+    height: 168px;
+}
+.foot .foot-right ul{
+    float: left;
+    width: 145px;
+    height: 168px;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+.foot .foot-right ul li{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.foot .foot-right ul li a{
+    color: #71716f;
+    font-size: 12px;
+}
+.foot .foot-right ul li:first-child a{
+    color: #474747;
+    font-size: 16px;
+}
+.foot .foot-bottom{
+    clear: both;
+    height: 57px;
+}
+.foot .foot-bottom .links{
+    width: 1100px;
+    height: 57px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+}
+.foot .foot-bottom .links span:nth-of-type(1){
+    color: #000;
+    width: 1050px;
+    float: left;
+    text-align: left;
+    padding-left: 40px;
+ }
+.foot .foot-bottom .links a{
+    clear: both;
+}
+.foot .foot-bottom .links span{
+    font-size: 12px;
+    margin: 0 8px;
+    color: #aa8d8f;
+}
